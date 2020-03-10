@@ -44,7 +44,7 @@ body {
 .main-photo::after {
   content: '';
   display: block;
-  border-bottom: ridge 2px #e13816;
+  border-bottom: ridge 2px #008dd6;
 
   /* 下線 */
   grid-column: 1 / -1;
@@ -98,82 +98,21 @@ body {
 }
 
 
-
-/* ランチメニュー */
-.lunch-menu {
-  grid-column: 2;
-  grid-row: 2;
-  text-align: center;
-  color: mintcream;
-
-  /* テキストのグリッド */
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: 70px 70px 140px auto;
-}
-
-.lunch-menu::after {
-  grid-column: 2;
-  grid-row: 1 / 3;
-  content: '';
-  display: block;
-  border-right: solid 7px #eea800;
-}
-
-.lunch-menu h3 {
-  font-size: 23px;
-}
-
-.lunch-menu h2 {
-  font-size: 25px;
-}
-
-.lunch-menu p {
-  font-size: 18px;
-}
-
-
-
-/* ランチメニュー画像 */
-.lunch-menu-photo {
-  grid-column: 1;
-  grid-row: 2;
-  padding-bottom: 10px;
-
-  /* 画像グリッド */
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto ;
-  grid-row-gap: 10px;
-}
-
-.lunch-menu-photo::after {
-  content: '';
-  display: block;
-  border-bottom: ridge 2px #008dd6;
-
-  /* 下線 */
-  grid-column: 1 / -1;
-  grid-row: 2;
-  margin-right: -250px;
-}
-
-
 /* コースメニュー */
 .course-menu {
-  grid-column: 1;
-  grid-row: 3;
+  grid-column: 2;
+  grid-row: 2;
   text-align: center;
   color: mintcream;
 
    /* テキストのグリッド */
    display: grid;
-   grid-template-columns: auto 1fr;
+   grid-template-columns: 1fr auto;
    grid-template-rows: 70px 70px 140px auto;
 }
 
 .course-menu::after {
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 1 / 3 ;
   content: '';
   display: block;
@@ -181,27 +120,27 @@ body {
 }
 
 .course-menu h3 {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 1;
   font-size: 23px;
 }
 
 .course-menu h2 {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 2;
   font-size: 25px;
 }
 
 .course-menu p {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 3;
   font-size: 18px;
 }
 
 /* コースメニュー画像 */
 .course-menu-photo {
-  grid-column: 2;
-  grid-row: 3;
+  grid-column: 1;
+  grid-row: 2;
   padding-bottom: 10px;
 
   /* コースメニュー下線 */
@@ -219,26 +158,26 @@ body {
   /* 下線 */
   grid-column: 1 / -1;
   grid-row: 2;
-  margin-left: -250px;
+  margin-right: -250px;
 }
 
 
 
 /* おすすめメニュー */
 .recommended-menu {
-  grid-column: 2;
-  grid-row: 4;
+  grid-column: 1;
+  grid-row: 3;
   text-align: center;
   color: mintcream;
 
   /* テキストのグリッド */
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto 1fr;
   grid-template-rows: 70px 70px 140px auto;
 }
 
 .recommended-menu::after {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 1 / 3;
   content: '';
   display: block;
@@ -246,14 +185,20 @@ body {
 }
 
 .recommended-menu h3 {
+  grid-column: 2;
+  grid-row: 1;
   font-size: 23px;
 }
 
 .recommended-menu h2 {
+  grid-column: 2;
+  grid-row: 2;
   font-size: 25px;
 }
 
 .recommended-menu p {
+  grid-column: 2;
+  grid-row: 3;
   font-size: 18px;
 }
 
@@ -261,8 +206,8 @@ body {
 
 /* おすすめメニュー画像 */
 .recommended-menu-photo {
-  grid-column: 1;
-  grid-row: 4;
+  grid-column: 2;
+  grid-row: 3;
   padding-bottom: 10px;
 
   /* テキストのグリッド */
@@ -280,24 +225,24 @@ body {
   /* 下線 */
   grid-column: 1 / -1;
   grid-row: 2;
-  margin-right: -250px;
+  margin-left: -250px;
 }
 
 /* グランドメニュー */
 .grand-menu {
-  grid-column: 1;
-  grid-row: 5;
+  grid-column: 2;
+  grid-row: 4;
   text-align: center;
   color: mintcream;
 
   /* テキストのグリッド */
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr auto;
   grid-template-rows: 70px 70px 140px auto;
 }
 
 .grand-menu::after {
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 1 / 3;
   content: '';
   display: block;
@@ -305,27 +250,27 @@ body {
 }
 
 .grand-menu h3 {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 1;
   font-size: 23px;
 }
 
 .grand-menu h2 {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 2;
   font-size: 25px;
 }
 
 .grand-menu p {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 3;
   font-size: 18px;
 }
 
 /* グランドメニュー画像 */
 .grand-menu-photo {
-  grid-column: 2;
-  grid-row: 5;
+  grid-column: 1;
+  grid-row: 4;
   padding-bottom: 10px;
 
   /* テキストのグリッド */
@@ -343,25 +288,25 @@ body {
   /* 下線 */
   grid-column: 1 / -1;
   grid-row: 2;
-  margin-left: -250px;
+  margin-right: -250px;
 }
 
 
 /* ドリンクメニュー */
 .drink-menu {
-  grid-column: 2;
-  grid-row: 6;
+  grid-column: 1;
+  grid-row: 5;
   text-align: center;
   color: mintcream;
 
   /* テキストのグリッド */
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto 1fr;
   grid-template-rows: 70px 70px 140px auto;
 }
 
 .drink-menu::after {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 1 / 3;
   content: '';
   display: block;
@@ -369,21 +314,27 @@ body {
 }
 
 .drink-menu h3 {
+  grid-column: 2;
+  grid-row: 1;
   font-size: 23px;
 }
 
 .drink-menu h2 {
+  grid-column: 2;
+  grid-row: 2;
   font-size: 25px;
 }
 
 .drink-menu p {
+  grid-column: 2;
+  grid-row: 3;
   font-size: 18px;
 }
 
 /* ドリンクメニュー画像 */
 .drink-menu-photo {
-  grid-column: 1;
-  grid-row: 6;
+  grid-column: 2;
+  grid-row: 5;
   padding-bottom: 10px;
 
   /* テキストのグリッド */
@@ -401,12 +352,12 @@ body {
   /* 下線 */
   grid-column: 1 / -1;
   grid-row: 2;
-  margin-right: -250px;
+  margin-left: -250px;
 }
 
 .gmap {
-  grid-column: 2;
-  grid-row: 7;
+  grid-column: 1;
+  grid-row: 6;
 
   display: grid;
   grid-template-columns: auto;
@@ -428,19 +379,19 @@ body {
 
 /* マップ */
 .gmap-menu {
-  grid-column: 1;
-  grid-row: 7;
+  grid-column: 2;
+  grid-row: 6;
   text-align: center;
   color: mintcream;
 
   /* テキストのグリッド */
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr auto;
   grid-template-rows: 70px 70px 140px auto;
 }
 
 .gmap-menu::after {
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 1 / 3;
   content: '';
   display: block;
@@ -448,7 +399,7 @@ body {
 }
 
 .gmap-menu h4 a{
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 1;
   font-size: 25px;
   color: #e3d600;
@@ -461,17 +412,17 @@ body {
 }
 
 .gmap-menu h3 {
-  grid-column: 2;
+  grid-column: 1;
   font-size: 23px;
 }
 
 .gmap-menu h2 {
-  grid-column: 2;
+  grid-column: 1;
   font-size: 25px;
 }
 
 .gmap-menu p {
-  grid-column: 2;
+  grid-column: 1;
   font-size: 18px;
 }
 
@@ -591,8 +542,9 @@ body {
     margin: 0px;
   }
 
-  /* ランチメニュー */
-  .lunch-menu {
+
+  /* コースメニュー */
+  .course-menu {
     grid-column: 1;
     grid-row: 3;
     text-align: center;
@@ -604,66 +556,8 @@ body {
     grid-template-rows: 70px 70px auto auto;
   }
 
-  .lunch-menu::after {
-    grid-column: 2;
-    grid-row: 1 / 3;
-    content: '';
-    display: block;
-    border-right: solid 3px #eea800;
-  }
-
-  .lunch-menu h3 {
-    font-size: 20px;
-  }
-  
-  .lunch-menu h2 {
-    font-size: 23px;
-  }
-  
-  .lunch-menu p {
-    font-size: 16px;
-  }
-
-  /* ランチメニュー画像 */
-  .lunch-menu-photo {
-    grid-column: 1;
-    grid-row: 4;
-    padding-bottom: 10px;
-
-    /* テキストのグリッド */
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-row-gap: 10px;
-  }
-  /* ランチメニュー下線 */
-  .lunch-menu-photo::after {
-    content: '';
-    display: block;
-    border-bottom: ridge 5px #008dd6;
-
-    /* 下線 */
-    grid-column: 1;
-    grid-row: 2;
-    margin: 0px;
-  }
-
-
-  /* コースメニュー */
-  .course-menu {
-    grid-column: 1;
-    grid-row: 5;
-    text-align: center;
-    color: mintcream;
-
-    /* テキストのグリッド */
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 70px 70px auto auto;
-  }
-
   .course-menu::after {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 1 / 3;
     content: '';
     display: block;
@@ -671,19 +565,19 @@ body {
   }
 
   .course-menu h3 {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
     font-size: 20px;
   }
   
   .course-menu h2 {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2;
     font-size: 23px;
   }
   
   .course-menu p {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 3;
     font-size: 16px;
   }
@@ -691,7 +585,7 @@ body {
   /* コースメニュー画像 */
   .course-menu-photo  {
     grid-column: 1;
-    grid-row: 6;
+    grid-row: 4;
     padding-bottom: 10px;
 
     /* コースメニュー下線 */
@@ -704,7 +598,7 @@ body {
   .course-menu-photo::after {
     content: '';
     display: block;
-    border-bottom: ridge 5px #e13816;
+    border-bottom: ridge 5px #008dd6;
 
     /* 下線 */
     grid-column: 1;
@@ -715,18 +609,18 @@ body {
   /* おすすめメニュー */
   .recommended-menu {
     grid-column: 1;
-    grid-row: 7;
+    grid-row: 5;
     text-align: center;
     color: mintcream;
 
     /* テキストのグリッド */
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 70px 70px auto auto;
   }
 
   .recommended-menu::after {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1 / 3;
     content: '';
     display: block;
@@ -734,21 +628,27 @@ body {
   }
 
   .recommended-menu h3 {
+    grid-column: 2;
+    grid-row: 1;
     font-size: 20px;
   }
   
   .recommended-menu h2 {
+    grid-column: 2;
+    grid-row: 2;
     font-size: 23px;
   }
   
   .recommended-menu p {
+    grid-column: 2;
+    grid-row: 3;
     font-size: 16px;
   }
 
   /* おすすめメニュー画像 */
   .recommended-menu-photo {
     grid-column: 1;
-    grid-row: 8;
+    grid-row: 6;
     padding-bottom: 10px;
 
     /* テキストのグリッド */
@@ -761,7 +661,7 @@ body {
   .recommended-menu-photo::after {
     content: '';
     display: block;
-    border-bottom: ridge 5px #008dd6;
+    border-bottom: ridge 5px #e13816;
 
     /* 下線 */
     grid-column: 1;
@@ -772,18 +672,18 @@ body {
   /* グランドメニュー */
   .grand-menu {
     grid-column: 1;
-    grid-row: 9;
+    grid-row: 7;
     text-align: center;
     color: mintcream;
 
     /* テキストのグリッド */
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: 70px 70px auto auto;
   }
 
   .grand-menu::after {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 1 / 3;
     content: '';
     display: block;
@@ -791,19 +691,19 @@ body {
   }
 
   .grand-menu h3 {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
     font-size: 20px;
   }
   
   .grand-menu h2 {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2;
     font-size: 23px;
   }
   
   .grand-menu p {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 3;
     font-size: 16px;
   }
@@ -811,7 +711,7 @@ body {
   /* グランドメニュー画像 */
   .grand-menu-photo {
     grid-column: 1;
-    grid-row: 10;
+    grid-row: 8;
     padding-bottom: 10px;
 
     /* テキストのグリッド */
@@ -824,7 +724,7 @@ body {
   .grand-menu-photo::after {
     content: '';
     display: block;
-    border-bottom: ridge 5px #e13816;
+    border-bottom: ridge 5px #008dd6;
 
     /* 下線 */
     grid-column: 1;
@@ -835,18 +735,18 @@ body {
   /* ドリンクメニュー */
   .drink-menu {
     grid-column: 1;
-    grid-row: 11;
+    grid-row: 9;
     text-align: center;
     color: mintcream;
 
     /* テキストのグリッド */
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 70px 70px auto auto;
   }
 
   .drink-menu::after {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1 / 3;
     content: '';
     display: block;
@@ -854,21 +754,27 @@ body {
   }
 
   .drink-menu h3 {
+    grid-column: 2;
+    grid-row: 1;
     font-size: 20px;
   }
   
   .drink-menu h2 {
+    grid-column: 2;
+    grid-row: 2;
     font-size: 23px;
   }
   
   .drink-menu p {
+    grid-column: 2;
+    grid-row: 3;
     font-size: 16px;
   }
   
   /* ドリンクメニュー画像 */
   .drink-menu-photo {
     grid-column: 1;
-    grid-row: 12;
+    grid-row: 10;
     padding-bottom: 10px;
 
     /* テキストのグリッド */
@@ -881,7 +787,7 @@ body {
   .drink-menu-photo::after {
     content: '';
     display: block;
-    border-bottom: ridge 5px #008dd6;
+    border-bottom: ridge 5px #e13816;
 
     /* 下線 */
     grid-column: 1;
@@ -891,7 +797,7 @@ body {
 
   .gmap {
     grid-column: 1;
-    grid-row: 14;
+    grid-row: 12;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -914,18 +820,18 @@ body {
   /* マップ */
   .gmap-menu {
     grid-column: 1;
-    grid-row: 13;
+    grid-row: 11;
     text-align: center;
     color: mintcream;
 
     /* テキストのグリッド */
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: 70px 70px auto auto;
   }
 
   .gmap-menu::after {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 1 / 3;
     content: '';
     display: block;
@@ -933,7 +839,7 @@ body {
   }
 
   .gmap-menu h4 a{
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
     font-size: 25px;
     color: #e3d600;
@@ -946,18 +852,18 @@ body {
   }
 
   .gmap-menu h3 {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2;
     font-size: 25px;
   }
   
   .gmap-menu h2 {
-    grid-column: 2;
+    grid-column: 1;
     font-size: 23px;
   }
   
   .gmap-menu p {
-    grid-column: 2;
+    grid-column: 1;
     font-size: 16px;
   }
 
